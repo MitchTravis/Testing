@@ -22,7 +22,9 @@ public class Testing extends Frame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        //Im going to add helloworld
+        System.out.println("Hello world");
         new Testing();
     }
 
