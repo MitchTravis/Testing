@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package medSimGUI;
-
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 /**
  *
  * @author MCV46316
@@ -14,8 +16,25 @@ public class JavaApplication3 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+
+    public static void main(final String[] args) {
+        final JFrame parent = new JFrame();
+        JButton button = new JButton();
+
+        button.setText("Click me to show dialog!");
+        parent.add(button);
+        parent.pack();
+        parent.setVisible(true);
+
+        button.addActionListener(new java.awt.event.ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                String name = JOptionPane.showInputDialog(parent,
+                        "What is your name?", null);
+            }
+        });
     }
-    
 }
+        
+        
+      
