@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 public class JavaApplication3 {
 
     /**
-     * @param args the command line arguments
+     * @param args the command line arguments go here
      */
 
     public static void main(final String[] args) {
